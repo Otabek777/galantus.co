@@ -7,7 +7,8 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Manrope', sans-serif; }
+  font-family: 'Manrope', sans-serif;
+  color: #0B1108; }
 
 body::-webkit-scrollbar {
   background-color: #fff;
@@ -174,6 +175,13 @@ ul, ol {
     margin-left: 30px; }
   .header__right a:nth-child(1) {
     margin-left: 0; }
+
+.header-white {
+  position: relative;
+  height: 80px;
+  border-bottom: 1px solid #C0CEC3; }
+  .header-white li a {
+    color: #0B1108; }
 
 .welcome {
   height: 898px;
@@ -625,6 +633,175 @@ ul, ol {
 
 .options__box:nth-child(1) {
   margin-top: 0; }
+
+.about_us {
+  padding-top: 112px;
+  padding-bottom: 120px; }
+
+.about_us__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 240px; }
+
+.about_us__left {
+  width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .about_us__left h2 {
+    width: 100%;
+    margin-bottom: 100px; }
+  .about_us__left p {
+    width: 48%;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150.7%; }
+
+.about_us__right {
+  min-width: 400px;
+  height: 600px;
+  overflow: hidden;
+  border-radius: 7px;
+  position: relative; }
+  .about_us__right img {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
+.about_us__right.order {
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+  height: 900px; }
+
+.exhibitions__top {
+  margin-bottom: 180px; }
+  .exhibitions__top h1 {
+    max-width: 900px;
+    width: 100%;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 82px;
+    margin-top: 93px;
+    margin-bottom: 30px; }
+  .exhibitions__top p {
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 55px;
+    margin-bottom: 40px; }
+    .exhibitions__top p span {
+      color: #849587; }
+  .exhibitions__top img {
+    width: 100%;
+    border-radius: 7px; }
+
+.exhibitions__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 240px; }
+  .exhibitions__box .img {
+    width: 600px;
+    height: 333px;
+    overflow: hidden;
+    border-radius: 7px; }
+    .exhibitions__box .img img {
+      width: 100%; }
+  .exhibitions__box .exhibitions__title {
+    width: 450px; }
+    .exhibitions__box .exhibitions__title h3 {
+      font-weight: normal;
+      font-size: 25px;
+      line-height: 130.6%;
+      margin-bottom: 30px; }
+    .exhibitions__box .exhibitions__title p {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150.7%; }
+
+.exhibitions__box.order .img {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1; }
+
+.exhibitions__bottom {
+  margin-bottom: 120px; }
+  .exhibitions__bottom p {
+    margin-left: auto;
+    max-width: 467px;
+    width: 100%;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 130.6%; }
+    .exhibitions__bottom p a {
+      text-decoration: underline;
+      color: #039849; }
+
+.wholesale {
+  padding-top: 120px;
+  padding-bottom: 60px; }
+
+.wholesale__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 60px; }
+  .wholesale__box .img {
+    width: 600px;
+    height: 450px;
+    border-radius: 7px; }
+    .wholesale__box .img img {
+      width: auto;
+      height: 100%; }
+
+.wholesale__left {
+  width: 500px; }
+  .wholesale__left h3 {
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 55px;
+    margin-bottom: 60px; }
+  .wholesale__left p {
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 130.6%;
+    margin-bottom: 60px; }
+  .wholesale__left p:last-child {
+    margin-bottom: 0; }
+
+.wholesale__text {
+  width: 50%; }
+  .wholesale__text h4 {
+    width: 400px;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 130.6%;
+    margin-bottom: 20px; }
+  .wholesale__text p {
+    width: 400px;
+    margin-bottom: 15px; }
+  .wholesale__text p:last-child {
+    margin-bottom: 0; }
 
 .footer {
   padding-top: 60px;

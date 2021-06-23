@@ -158,6 +158,23 @@ ul, ol {
   margin: 0 auto;
   padding: 0 16px; }
 
+.header__burger {
+  display: none;
+  width: 20px;
+  height: 15px;
+  margin-right: 5px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .header__burger span {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #fff; }
+
+.header-white .header__burger span {
+  background: #0B1108; }
+
 .header {
   position: absolute;
   top: 0;
@@ -922,6 +939,25 @@ ul, ol {
 .reference__aside {
   width: 216px;
   margin-right: 28px; }
+  .reference__aside li .block {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+    .reference__aside li .block .box {
+      padding: 15px 0 0;
+      border-bottom: 1px solid #C0CEC3; }
+      .reference__aside li .block .box a {
+        display: block;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+        color: #849587;
+        margin-bottom: 15px; }
+      .reference__aside li .block .box span {
+        display: block;
+        padding-left: 15px; }
   .reference__aside li p {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -940,7 +976,7 @@ ul, ol {
     color: #0B1108;
     text-transform: uppercase;
     cursor: pointer; }
-  .reference__aside li a {
+  .reference__aside li .a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -958,12 +994,17 @@ ul, ol {
     color: #0B1108;
     text-transform: uppercase;
     cursor: pointer; }
-  .reference__aside li p.active, .reference__aside li a.active {
+  .reference__aside li p.active, .reference__aside li .a.active {
     border-color: #C0CEC3; }
+  .reference__aside li.active .block {
+    max-height: 1000px;
+    -webkit-transition: all 0.9s ease;
+    -o-transition: all 0.9s ease;
+    transition: all 0.9s ease; }
   .reference__aside li:last-child a, .reference__aside li:last-child p {
     border: none; }
 
-.reference__main {
+.reference__main_wrap {
   width: calc(100% - 244px); }
 
 .reference__main {
@@ -1798,7 +1839,10 @@ ul, ol {
 
 .personal__accordion_block {
   max-height: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
   .personal__accordion_block .top {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1840,6 +1884,15 @@ ul, ol {
       width: 15%; }
   .personal__accordion_block .center:last-child {
     border: none; }
+
+.personal__accordion.active .plus::before {
+  height: 0; }
+
+.personal__accordion.active .personal__accordion_block {
+  max-height: 1000px;
+  -webkit-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease; }
 
 .personal__right {
   width: 350px; }

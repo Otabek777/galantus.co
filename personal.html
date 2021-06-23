@@ -104,17 +104,113 @@
                                 <p>Заказ <span>№12 457 от 17.11.2020</span> на сумму <span>12 950 руб.</span></p>
                                 <button class="plus"></button>
                             </div>
-                        </div>
-                        <div class="personal__accordion">
-                            <div class="title">
-                                <p>Заказ <span>№12 457 от 17.11.2020</span> на сумму <span>12 950 руб.</span></p>
-                                <button class="plus"></button>
+                            <div class="personal__accordion_block">
+                                <div class="top">
+                                    <p>Наименование товара</p>
+                                    <p>Количество</p>
+                                    <p>Цена</p>
+                                    <p>Стоимость</p>
+                                </div>
+                                <div class="center">
+                                    <p>Роза Пич Аваланш 50см</p>
+                                    <p>101 шт</p>
+                                    <p>70 руб.</p>
+                                    <p>7 070 руб.</p>
+                                </div>
+                                <div class="center">
+                                    <p>Роза Пич Аваланш 50см</p>
+                                    <p>101 шт</p>
+                                    <p>70 руб.</p>
+                                    <p>7 070 руб.</p>
+                                </div>
+                                <div class="center">
+                                    <p>Роза Пич Аваланш 50см</p>
+                                    <p>101 шт</p>
+                                    <p>70 руб.</p>
+                                    <p>7 070 руб.</p>
+                                </div>
+                                <div class="center">
+                                    <p>Роза Пич Аваланш 50см</p>
+                                    <p>101 шт</p>
+                                    <p>70 руб.</p>
+                                    <p>7 070 руб.</p>
+                                </div>
                             </div>
                         </div>
                         <div class="personal__accordion">
                             <div class="title">
                                 <p>Заказ <span>№12 457 от 17.11.2020</span> на сумму <span>12 950 руб.</span></p>
                                 <button class="plus"></button>
+                            </div>
+                            <div class="personal__accordion_block">
+                                <div class="top">
+                                    <p>Наименование товара</p>
+                                    <p>Количество</p>
+                                    <p>Цена</p>
+                                    <p>Стоимость</p>
+                                </div>
+                                <div class="center">
+                                    <p>Роза Пич Аваланш 50см</p>
+                                    <p>101 шт</p>
+                                    <p>70 руб.</p>
+                                    <p>7 070 руб.</p>
+                                </div>
+                                <div class="center">
+                                    <p>Роза Пич Аваланш 50см</p>
+                                    <p>101 шт</p>
+                                    <p>70 руб.</p>
+                                    <p>7 070 руб.</p>
+                                </div>
+                                <div class="center">
+                                    <p>Роза Пич Аваланш 50см</p>
+                                    <p>101 шт</p>
+                                    <p>70 руб.</p>
+                                    <p>7 070 руб.</p>
+                                </div>
+                                <div class="center">
+                                    <p>Роза Пич Аваланш 50см</p>
+                                    <p>101 шт</p>
+                                    <p>70 руб.</p>
+                                    <p>7 070 руб.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="personal__accordion">
+                            <div class="title">
+                                <p>Заказ <span>№12 457 от 17.11.2020</span> на сумму <span>12 950 руб.</span></p>
+                                <button class="plus"></button>
+                            </div>
+                            <div class="personal__accordion_block">
+                                <div class="top">
+                                    <p>Наименование товара</p>
+                                    <p>Количество</p>
+                                    <p>Цена</p>
+                                    <p>Стоимость</p>
+                                </div>
+                                <div class="center">
+                                    <p>Роза Пич Аваланш 50см</p>
+                                    <p>101 шт</p>
+                                    <p>70 руб.</p>
+                                    <p>7 070 руб.</p>
+                                </div>
+                                <div class="center">
+                                    <p>Роза Пич Аваланш 50см</p>
+                                    <p>101 шт</p>
+                                    <p>70 руб.</p>
+                                    <p>7 070 руб.</p>
+                                </div>
+                                <div class="center">
+                                    <p>Роза Пич Аваланш 50см</p>
+                                    <p>101 шт</p>
+                                    <p>70 руб.</p>
+                                    <p>7 070 руб.</p>
+                                </div>
+                                <div class="center">
+                                    <p>Роза Пич Аваланш 50см</p>
+                                    <p>101 шт</p>
+                                    <p>70 руб.</p>
+                                    <p>7 070 руб.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -191,5 +287,14 @@
     <script src="js/SmoothScroll.js"></script>
     <script src="slick-1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        const accord = document.querySelectorAll('.personal__accordion');
+
+        for(let i = 0; i < accord.length; i++) {
+            accord[i].addEventListener('click', function() {
+                this.classList.toggle('active');
+            });
+        };
+    </script>
 </body>
 </html>

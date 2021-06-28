@@ -181,5 +181,14 @@
     <script src="js/SmoothScroll.js"></script>
     <script src="slick-1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        const link = document.querySelectorAll('.reference__aside li');
+
+        for(let i = 0; i < link.length; i++) {
+            link[i].addEventListener('click', function() {
+                this.classList.toggle('active');
+            });
+        };
+    </script>
 </body>
 </html>

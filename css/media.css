@@ -521,6 +521,7 @@
     }
     .photo__title {
         flex-direction: column;
+        margin-left: 0;
     }
     .photo__title h4, .photo__title p, .photo__title a {
         width: 100%;

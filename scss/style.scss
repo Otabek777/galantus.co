@@ -1622,7 +1622,6 @@ ul,ol {
         font-weight: normal;
         font-size: 25px;
         line-height: 130.6%;
-        margin-top: 60px;
         margin-bottom: 30px;
     }
     h4 {
@@ -1634,6 +1633,7 @@ ul,ol {
 }
 .request__box {
     display: flex;
+    margin-top: 60px;
 }
 .request__down {
     display: flex;
@@ -1672,41 +1672,43 @@ ul,ol {
         display: flex;
         align-items: center;
         margin-bottom: 10px;
-        input {
-            width: 15px;
-            height: 15px;
-            margin-right: 10px;
+        input[type='radio'] {
             position: relative;
-            cursor: pointer;
-        }
-        input::before {
-            content: "";
-            width: 15px;
             height: 15px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-            background-color: #fff;
-            border: 1px solid #0B1108;
-            border-radius: 50%;
-        }
-        input::after {
-            content: "";
-            width: 7px;
-            height: 7px;
+            width: 15px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            outline: none;
+            margin-right: 10px;
+            cursor: pointer;
+          }
+          
+          input[type='radio']::before {
+            content: '';
             position: absolute;
             top: 50%;
             left: 50%;
-            z-index: 1;
-            transform: translate(-50%, -50%);
-            background-color: #0B1108;
+            width: 15px;
+            height: 15px;
             border-radius: 50%;
-            opacity: 0;
-        }
-        input:checked::after {
-            opacity: 1;
-        }
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border: 1px solid #0B1108;
+          }
+          
+          input[type='radio']:checked::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: #0B1108;
+            transform: translate(-50%, -50%);
+            visibility: visible;
+          }
         label {
             font-weight: normal;
             font-size: 16px;
@@ -2172,6 +2174,10 @@ ul,ol {
         line-height: 130%;
         color: #F4F8F4;
         margin-bottom: 15px;
+        transition: all.3s ease;
+    }
+    a:hover {
+        color: #849587;
     }
     p {
         font-weight: normal;
@@ -2248,6 +2254,13 @@ ul,ol {
         font-weight: normal;
         font-size: 12px;
         line-height: 130%;
+        a {
+            color: #849587;
+            transition: all.3s ease
+        }
+        a:hover {
+            opacity: 0.7;
+        }
     }
     p:last-child {
         margin-left: 655px;

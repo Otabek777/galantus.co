@@ -8,7 +8,10 @@
     .header__right {
         margin-left: auto;
     }
-    .topproducts__box, .akciya__box {
+    .topproducts__item .img {
+        width: 100%;
+    }
+    .akciya__box {
         width: 100%;
         overflow-x: scroll;
     }
@@ -311,6 +314,12 @@
     }
 }
 @media screen and (max-width: 700px) {
+    .akciya__item .img {
+        width: 100%;
+    }
+    .akciya__box {
+        overflow-x: visible;
+    }
     .product__right .btn {
         width: 100%;
     }
